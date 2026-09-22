@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="IT-it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM.Technologies | Sviluppatore & IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'Fira Code', monospace; }
+    </style>
+</head>
+<body class="bg-[#0b1120] text-slate-100 min-h-screen selection:bg-blue-500 selection:text-white antialiased">
+
+    <nav class="fixed top-0 w-full bg-[#0b1120]/80 backdrop-blur-md border-b border-slate-800/50 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            
+            <a href="#home" class="flex items-center gap-3 h-full py-2 group">
+                <img src="assets/logo.png" alt="MM.Technologies Logo" class="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+                <span class="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent font-mono tracking-wider transition-opacity duration-200 group-hover:opacity-90">
+                    MM.Technologies
+                </span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-cyan-400 transition duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-cyan-400 hover:after:w-full after:transition-all after:duration-300">Home</a>
+                <a href="#chi-sono" class="hover:text-cyan-400 transition duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-cyan-400 hover:after:w-full after:transition-all after:duration-300">Chi Sono</a>
+                <a href="#competenze" class="hover:text-cyan-400 transition duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-cyan-400 hover:after:w-full after:transition-all after:duration-300">Competenze</a>
+                <a href="#progetti" class="hover:text-cyan-400 transition duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-cyan-400 hover:after:w-full after:transition-all after:duration-300">Progetti</a>
+                <a href="#contatti" class="hover:text-cyan-400 transition duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-cyan-400 hover:after:w-full after:transition-all after:duration-300">Contatti</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-slate-400 hover:text-white focus:outline-none transition-colors">
+                <svg id="menu-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0b1120]/95 backdrop-blur-lg border-b border-slate-800 px-6 py-4 space-y-4 flex flex-col transition-all duration-350 shadow-xl">
+            <a href="#home" class="mobile-link text-slate-300 hover:text-cyan-400 font-medium transition py-1">Home</a>
+            <a href="#chi-sono" class="mobile-link text-slate-300 hover:text-cyan-400 font-medium transition py-1">Chi Sono</a>
+            <a href="#competenze" class="mobile-link text-slate-300 hover:text-cyan-400 font-medium transition py-1">Competenze</a>
+            <a href="#progetti" class="mobile-link text-slate-300 hover:text-cyan-400 font-medium transition py-1">Progetti</a>
+            <a href="#contatti" class="mobile-link text-slate-300 hover:text-cyan-400 font-medium transition py-1">Contatti</a>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6 max-w-4xl mx-auto flex flex-col justify-center min-h-[85vh]">
+        <p class="text-cyan-400 font-mono text-sm mb-4 tracking-wider animate-pulse">Ciao, il mio nome è</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">
+            Mattia Mungari.
+        </h1>
+        <h2 class="text-3xl md:text-5xl font-bold text-slate-400 mb-6 tracking-tight">
+            Sviluppo software e architetture di rete.
+        </h2>
+        <p class="text-lg text-slate-400 max-w-xl mb-10 leading-relaxed">
+            Sono uno sviluppatore informatico appassionato di programmazione backend, automazione e reti. Scrivo codice pulito per tradurre problemi logici in soluzioni digitali efficienti.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="#progetti" class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-blue-500/10 hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition duration-200">
+                Esplora i miei lavori
+            </a>
+            <a href="https://github.com/MM-Technologies-coder" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-slate-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-slate-700 transition duration-200">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <section id="chi-sono" class="py-24 px-6 bg-slate-900/20 border-t border-slate-800/40">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-4">
+                Chi Sono
+                <span class="h-[1px] bg-slate-800 flex-grow"></span>
+            </h2>
+            <div class="text-slate-400 space-y-5 leading-relaxed max-w-3xl text-base md:text-lg font-light">
+                <p>
+                    Sono un programmatore e studente di Informatica con una forte passione per l'automazione, l'architettura del software e la sicurezza delle reti. Mi piace analizzare i problemi complessi e trovare la soluzione più efficiente attraverso logiche strutturate.
+                </p>
+                <p>
+                    Dedico gran parte del mio tempo allo studio e alla sperimentazione di nuove tecnologie, muovendomi con fluidità tra lo sviluppo software (C/C++, Python, Java) e le infrastrutture IT, come testimoniano le mie certificazioni Cisco e Zyxel in ambito Networking.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competenze" class="py-24 px-6 max-w-5xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-12 flex items-center gap-4">
+            Competenze Tech
+            <span class="h-[1px] bg-slate-800 flex-grow"></span>
+        </h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-300">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-4 flex items-center gap-2">⚙️ Backend & DB</h3>
+                <ul class="space-y-2.5 text-slate-300 font-mono text-sm">
+                    <li><span class="text-blue-500">▹</span> C / C++</li>
+                    <li><span class="text-blue-500">▹</span> Python</li>
+                    <li><span class="text-blue-500">▹</span> Java</li>
+                    <li><span class="text-blue-500">▹</span> SQLite</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-300">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-4 flex items-center gap-2">🌐 Web & Frontend</h3>
+                <ul class="space-y-2.5 text-slate-300 font-mono text-sm">
+                    <li><span class="text-blue-500">▹</span> JavaScript (ES6+)</li>
+                    <li><span class="text-blue-500">▹</span> HTML5 / CSS3</li>
+                    <li><span class="text-blue-500">▹</span> API Integration</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-300">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-4 flex items-center gap-2">🔒 Net & Security</h3>
+                <ul class="space-y-2.5 text-slate-300 font-mono text-sm">
+                    <li><span class="text-blue-500">▹</span> Cisco IT Essentials</li>
+                    <li><span class="text-blue-500">▹</span> Zyxel Security</li>
+                    <li><span class="text-blue-500">▹</span> Telemetria & Radio</li>
+                    <li><span class="text-blue-500">▹</span> Windows / Linux</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-300">
+                <h3 class="text-lg font-semibold text-cyan-400 mb-4 flex items-center gap-2">🛠️ Strumenti</h3>
+                <ul class="space-y-2.5 text-slate-300 font-mono text-sm">
+                    <li><span class="text-blue-500">▹</span> Git / GitHub</li>
+                    <li><span class="text-blue-500">▹</span> Problem Solving</li>
+                    <li><span class="text-blue-500">▹</span> Project Mgmt</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="progetti" class="py-24 px-6 bg-slate-900/20 border-t border-slate-800/40">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-12 flex items-center gap-4">
+                I Miei Progetti
+                <span class="h-[1px] bg-slate-800 flex-grow"></span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-[#0b1120] border border-slate-800 p-6 rounded-xl flex flex-col justify-between hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-[11px] font-mono px-2 py-0.5 bg-blue-500/10 rounded text-cyan-400 border border-cyan-500/20">Finalista Nazionale</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">CanSat Italia (ESA/ASI)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Progettazione e sviluppo software/hardware di un mini-satellite. Gestione della logica di acquisizione dati sensoriali e implementazione della telemetria per trasmissione radio in tempo reale.</p>
+                    </div>
+                    <div class="flex flex-col mt-auto">
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800/50">
+                            <div class="flex gap-2 text-xs font-mono text-slate-500">
+                                <span>C/C++</span><span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#0b1120] border border-slate-800 p-6 rounded-xl flex flex-col justify-between hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-[11px] font-mono px-2 py-0.5 bg-emerald-500/10 rounded text-emerald-400 border border-emerald-500/20">Freelance</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Time Tracking Web App</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Progettazione backend e database per un'app aziendale. Sviluppo di logiche per l'autenticazione utenti e algoritmi di calcolo automatizzato del tempo lavorativo e delle pause.</p>
+                    </div>
+                    <div class="flex flex-col mt-auto">
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800/50">
+                            <a href="https://github.com/MM-Technologies-coder/TimeTracker.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 text-xs font-mono font-medium transition gap-1 group-hover:underline">
+                                Vedi Repository ↗
+                            </a>
+                            <div class="flex gap-2 text-xs font-mono text-slate-500">
+                                <span>C/C++</span><span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#0b1120] border border-slate-800 p-6 rounded-xl flex flex-col justify-between hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300 group">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-[11px] font-mono px-2 py-0.5 bg-purple-500/10 rounded text-purple-400 border border-purple-500/20">Zucchetti Academy</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Artemis-AI</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Sviluppo di un'applicazione web orientata agli oggetti, incentrata sulla gestione delle dinamiche front-end, integrazione logica di codice ed uso di API esterne.</p>
+                    </div>
+                    <div class="flex flex-col mt-auto">
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800/50">
+                            <a href="https://github.com/MM-Technologies-coder/ArtemisAI.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-purple-400 hover:text-purple-300 text-xs font-mono font-medium transition gap-1 group-hover:underline">
+                                Vedi Repository ↗
+                            </a>
+                            <div class="flex gap-2 text-xs font-mono text-slate-500">
+                                <span>JS</span><span>API</span><span>HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatti" class="py-32 px-6 text-center max-w-xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">Mettiamoci in contatto</h2>
+        <p class="text-slate-400 mb-8 leading-relaxed">
+            Sono sempre alla ricerca di nuove opportunità di inserimento aziendale, progetti interessanti e sfide lavorative.
+        </p>
+
+        <!--
+        <div class="flex justify-center mb-10">
+            <div class="badge-base LI-profile-badge" data-locale="it_IT" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="mattiamungari" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://it.linkedin.com/in/mattiamungari?trk=profile-badge">Mattia Mungari</a>
+            </div>
+        </div>
+        -->
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="mailto:mungari.mattia@outlook.com" class="inline-block bg-transparent border border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 font-medium px-6 py-3 rounded-lg font-mono transition-all duration-200 hover:scale-[1.02]">
+                Invia una Email
+            </a>
+            <a href="https://www.linkedin.com/in/mattiamungari" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600/20 border border-blue-500/50 text-blue-400 hover:bg-blue-600/30 font-medium px-6 py-3 rounded-lg font-mono transition-all duration-200 hover:scale-[1.02]">
+                LinkedIn
+            </a>
+            <a href="https://github.com/MM-Technologies-coder" target="_blank" rel="noopener noreferrer" class="inline-block bg-slate-800 border border-slate-700 text-slate-300 hover:bg-slate-700 font-medium px-6 py-3 rounded-lg font-mono transition-all duration-200 hover:scale-[1.02]">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500 font-mono">
+        &copy; 2026 MM.Technologies. Tutti i diritti riservati.
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const menuPath = document.getElementById('menu-path');
+
+        const hamburgerPath = "M4 6h16M4 12h16M4 18h16";
+        const closePath = "M6 18L18 6M6 6l12 12";
+
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            if (!isHidden) {
+                menuPath.setAttribute('d', closePath);
+                menuBtn.classList.add('rotate-90');
+            } else {
+                menuPath.setAttribute('d', hamburgerPath);
+                menuBtn.classList.remove('rotate-90');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuPath.setAttribute('d', hamburgerPath);
+                menuBtn.classList.remove('rotate-90');
+            });
+        });
+    </script>
+</body>
+</html>
